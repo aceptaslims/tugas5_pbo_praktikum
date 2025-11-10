@@ -1,0 +1,21 @@
+package Pertemuan5;
+
+import java.util.Scanner;
+
+public class AngkaGanjil {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan banyak angka: ");
+        int n = input.nextInt();
+
+        int total = 0;
+        System.out.print("Angka ganjil: ");
+        for (int i = 1; i <= n * 2; i += 2) {
+            System.out.print(i + " ");
+            total += i;
+        }
+
+        System.out.println("\nTotal penjumlahan: " + total);
+    }
+}
+
